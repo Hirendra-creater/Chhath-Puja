@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>छठ पर्व २०८२ को शुभकामना कार्ड</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://sl.bing.net/dsKgYLiwha0');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .profile-upload {
+            margin-bottom: 20px;
+        }
+        .profile-upload img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px;
+        }
+        .messages {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .message {
+            margin-bottom: 15px;
+        }
+        .emoji {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>छठ पर्व २०८२ को शुभकामना</h1>
+        
+        <!-- Profile Picture Uploading System -->
+        <div class="profile-upload">
+            <label for="profile-pic">तपाईंको प्रोफाइल फोटो अपलोड गर्नुहोस्:</label><br>
+            <input type="file" id="profile-pic" accept="image/*" onchange="previewImage(event)">
+            <img id="preview" src="" alt="प्रोफाइल फोटो" style="display: none;">
+        </div>
+        
+        <!-- All Greeting Messages -->
+        <div class="messages">
+            <div class="message">
+                छठ पर्व २०८२ को अवसरमा सूर्यदेवबाट तपाईंको जीवनमा उज्यालो, शान्ति र समृद्धि आउन सकोस् भन्ने हार्दिक शुभकामना।
+            </div>
+            <div class="message">
+                आस्था र शुद्धताको पर्व छठले सबैको जीवनमा नयाँ आशा र शक्ति ल्याओस्। छठ पूजा २०८२ को मंगलमय शुभकामना <span class="emoji">🌞🙏</span>
+            </div>
+            <div class="message">
+                सूर्य भगवान् र छठी मैया प्रति आस्था प्रकट गर्दै, यो छठले तपाईंको परिवारमा सुख, स्वास्थ्य र समृद्धि भरेर ल्याओस्। शुभ छठ पर्व २०८२!
+            </div>
+            <div class="message">
+                उदाउँदो र अस्ताउँदो सूर्यलाई नमन गर्दै, तपाईंको जीवन पनि उज्यालो र सफलताले भरियोस्। शुभ छठ पूजा २०८२ <span class="emoji">🌄🌅</span>
+            </div>
+            <div class="message">
+                छठ पूजा २०८२ को पावन अवसरमा सबैलाई आत्मिक शान्ति, परिवारमा प्रेम र हृदयमा आस्था मिलोस्। जय छठी मैया <span class="emoji">🌞🙏</span>
+            </div>
+            <div class="message">
+                सूर्यको प्रकाशले जीवनमा सकारात्मकता र उर्जा ल्याओस्। मंगलमय छठ पर्व २०८२ को शुभकामना!
+            </div>
+            <div class="message">
+                छठ पर्व २०८२ ले तपाईंको प्रत्येक दिन नयाँ आशा र प्रेरणाले भरियोस्। शुभकामना सहित <span class="emoji">🌞💫</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('preview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>
